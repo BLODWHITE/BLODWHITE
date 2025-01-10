@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLODWHITE OFFICIAL</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: url('anime_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: fadeIn 3s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            animation: slideIn 2s ease-out;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 20px;
+            animation: fadeIn 4s ease-out;
+        }
+
+        a {
+            color: #FF5733;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .video-container {
+            margin-top: 40px;
+            animation: slideInVideo 3s ease-out;
+        }
+
+        iframe {
+            width: 80%;
+            height: 500px;
+            border: none;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInVideo {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BLODWHITE OFFICIAL</h1>
+        <h2><a href="https://www.youtube.com/@BLODWHITE-1" target="_blank">Yeni Kanal</a></h2>
+
+        <div class="video-container">
+            <h2>Video Başlığı</h2>
+            <iframe src="https://www.youtube.com/embed/Z6Fjc1jNRH8?si=43XO-uDD4qsIV4BU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
